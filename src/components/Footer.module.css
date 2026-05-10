@@ -1,0 +1,243 @@
+.footer {
+  background: var(--bg-color);
+  color: var(--text-color);
+  padding-top: 4rem;
+}
+
+.interiorSection {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.interiorContent h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.interiorContent p {
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.imageCard {
+  border-radius: 16px;
+  overflow: hidden;
+  height: 400px;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid var(--card-border);
+  cursor: pointer;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.lightbox img {
+  max-width: 95%;
+  max-height: 85vh;
+  border-radius: 12px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  object-fit: contain;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  z-index: 2001;
+  transition: transform 0.2s ease;
+}
+
+.closeBtn:hover {
+  transform: scale(1.1);
+}
+
+.lightboxImage {
+  touch-action: none;
+  cursor: grab;
+}
+
+.lightboxImage:active {
+  cursor: grabbing;
+}
+
+.imageCounter {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 500;
+  backdrop-filter: blur(5px);
+  font-size: 1rem;
+}
+
+.imageCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.imageCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.imageCard:hover img {
+  transform: scale(1.1);
+}
+
+.contactSection {
+  background: var(--nav-bg);
+  padding: 6rem 2rem;
+  border-top: 1px solid var(--card-border);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.contactCard, .locationCard {
+  background: var(--card-bg);
+  padding: 3rem;
+  border-radius: 20px;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--nav-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contactCard h3, .locationCard h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.contactCard p, .locationCard p {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+
+.locationBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: transparent;
+  color: var(--text-color);
+  border: 2px solid var(--accent-color);
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.locationBtn:hover {
+  background: var(--accent-color);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(217, 119, 6, 0.3);
+}
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.socialLinks a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.socialLinks a:hover {
+  color: var(--accent-color);
+}
+
+.bottomBar {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid var(--card-border);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .interiorSection {
+    padding: 3rem 0;
+  }
+  
+  .interiorContent h2 {
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  .imageGrid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 0 1.5rem 2rem 1.5rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .imageGrid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .imageCard {
+    flex: 0 0 280px;
+    height: 350px;
+    scroll-snap-align: center;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .contactCard, .locationCard {
+    padding: 2rem;
+  }
+}
