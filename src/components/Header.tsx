@@ -2,14 +2,17 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, Moon, Sun, MapPin, Phone, Instagram, Music, MessageCircle, ChevronDown, ChevronUp } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTheme } from '../context/ThemeContext';
+import { useSearch } from '../context/SearchContext';
 import styles from './Header.module.css';
 import { menuData } from '../data/menuData';
+import { Search } from 'lucide-react';
 
 export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isContactOpen, setIsContactOpen] = useState(false);
   const { isDarkMode, toggleTheme } = useTheme();
+  const { searchQuery, setSearchQuery, setIsFocused } = useSearch();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,8 +35,14 @@ export const Header: React.FC = () => {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-  const scrollTo = (id: string) => {
+  const scrollTo = (id: string, categoryId?: string) => {
     setIsMenuOpen(false);
+    if (categoryId) {
+      // Dispatch custom event to open the category popup
+      const event = new CustomEvent('open-menu-category', { detail: categoryId });
+      window.dispatchEvent(event);
+      return;
+    }
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
@@ -67,15 +76,31 @@ export const Header: React.FC = () => {
           </button>
         </div>
         <div className={styles.menuContent}>
+          <div className={styles.menuSearch}>
+            <Search size={18} className={styles.menuSearchIcon} />
+            <input 
+              type="text" 
+              placeholder="Yemək axtarın..." 
+              value={searchQuery}
+              onChange={(e) => {
+                setSearchQuery(e.target.value);
+                if (e.target.value.trim().length > 0) {
+                  setIsFocused(true);
+                  scrollTo('menu-section');
+                }
+              }}
+              className={styles.menuSearchInput}
+            />
+          </div>
           <nav className={styles.navLinks}>
-            <button onClick={() => scrollTo('banquet-menu')} className={styles.specialLink}>
+            <button onClick={() => scrollTo('menu-section', '30 Manat Menu')} className={styles.specialLink}>
               30 AZN Banket Menyusu
             </button>
             <div className={styles.categories}>
               <h3>Kateqoriyalar</h3>
               <div className={styles.categoryGrid}>
                 {menuData.filter(c => c.id !== '30 Manat Menu').map(cat => (
-                  <button key={cat.id} onClick={() => scrollTo(`category-${cat.id}`)}>
+                  <button key={cat.id} onClick={() => scrollTo('', cat.id)}>
                     {cat.title}
                   </button>
                 ))}
@@ -108,7 +133,7 @@ export const Header: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 10 }}
                   >
-                    <a href="https://wa.me/994104672788" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/994505508282" target="_blank" rel="noopener noreferrer">
                       <MessageCircle size={18} /> WhatsApp
                     </a>
                     <a href="https://www.instagram.com/serinrestoran.quba/" target="_blank" rel="noopener noreferrer">

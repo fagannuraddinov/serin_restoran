@@ -65,10 +65,12 @@
   left: 0;
   width: 100%;
   height: 100vh;
+  height: 100dvh; /* Dynamic viewport height for mobile browsers */
   z-index: 200;
   display: flex;
   flex-direction: column;
   padding: 2rem;
+  padding-bottom: calc(2rem + env(safe-area-inset-bottom)); /* Add extra space for iOS home bar/nav bar */
   transform: translateY(-100%);
   transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
   background: var(--bg-color); /* Fallback */
@@ -157,6 +159,7 @@
 .menuFooter {
   margin-top: auto;
   padding-top: 2rem;
+  padding-bottom: 2rem; /* Ensure space at the very bottom */
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -218,3 +221,33 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+.menuSearch {
+  position: relative;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.menuSearchIcon {
+  position: absolute;
+  left: 1rem;
+  color: var(--text-muted);
+}
+
+.menuSearchInput {
+  width: 100%;
+  padding: 0.8rem 1rem 0.8rem 2.8rem;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  color: var(--text-color);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.menuSearchInput:focus {
+  border-color: var(--accent-color);
+}
+

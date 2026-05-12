@@ -17,7 +17,7 @@ export const menuData: MenuCategory[] = [
     "backgroundUrl": "/images/30_manat_menu_30_manatliq_menu.jpeg",
     "items": [
       {
-        "name": "SƏRİN AİLƏVİ RESTORAN\nToy, Nişan, Ad günləri və Bayram şənlikləri üçün\nMENYU 30 Azn\nSOYUQ QƏLYANALTILAR\nMeyvə (mövsümü)\nPomidor - xiyar\nPendir (mal-saçaq)\nSüzmə\nAjika\nZeytun - limon\nLəbləbi\nBlinçik (mal əti və ciyər)\nRulet (Lavaşda)\nManqal salatı\nGavalı salatı\nPaytaxt salatı\nMimoza\nKazaçki\nÇörək (xərək)\nKABABLAR\nLülə\nTikə\nAntrikod - Yablocka\nBasdırma\nToyuq\nKartof\nTərəvəz (istəyə görə)\nİSTİ YEMƏKLƏR\nÇolpa Tabaka və ya (soyutma)\nBuğlama (quzu və ya mal)\nPilov (şüüt və ya turşu qovurma)\nSƏRİN İÇKİLƏR\nQazlı su\nQazsız su\nDüşes\nTarxun\nKampot\nÇay\nƏLAVƏ XƏRCLƏR (30₼)\nSpirtli içki\nMusiqi\nKamera - foto\nDekor\nŞou proqram\nƏlaqə və Sosial Media:\nTikTok: serin.restoran.quba\nInstagram: serinrestoran_quba\nRestoran əlaqə tel: 050 550 82 82",
+        "name": "SƏRİN AİLƏVİ RESTORAN\nToy, Nişan, Ad günləri və Bayram şənlikləri üçün\nMENYU 30 Azn\nSOYUQ QƏLYANALTILAR\nMeyvə (mövsümü)\nPomidor - xiyar\nPendir (mal-saçaq)\nSüzmə\nAjika\nZeytun - limon\nLəbləbi\nBlinçik (mal əti və ciyər)\nRulet (Lavaşda)\nManqal salatı\nGavalı salatı\nPaytaxt salatı\nMimoza\nKazaçki\nÇörək (xərək)\nKABABLAR\nLülə\nTikə\nAntrikod - Yablocka\nBasdırma\nToyuq\nKartof\nTərəvəz (istəyə görə)\nİSTİ YEMƏKLƏR\nÇolpa Tabaka və ya (soyutma)\nBuğlama (quzu ve ya mal)\nPilov (şüüt və ya turşu qovurma)\nSƏRİN İÇKİLƏR\nQazlı su\nQazsız su\nDüşes\nTarxun\nKampot\nÇay\nƏLAVƏ XƏRCLƏR (30₼)\nSpirtli içki\nMusiqi\nKamera - foto\nDekor\nŞou proqram\nƏlaqə və Sosial Media:\nTikTok: serin.restoran.quba\nInstagram: serinrestoran_quba\nRestoran əlaqə tel: 050 550 82 82",
         "price": "30 AZN"
       }
     ]
@@ -25,7 +25,7 @@ export const menuData: MenuCategory[] = [
   {
     "id": "Səhər Yeməyi",
     "title": "Səhər Yeməkləri",
-    "backgroundUrl": "/images/s_h_r_yem_yi_alma_cemi.jpg",
+    "backgroundUrl": "/images/s_h_r_yem_yi_mal_pendiri.jpg",
     "items": [
       {
         "name": "Xərək Çörəyi",
@@ -84,7 +84,7 @@ export const menuData: MenuCategory[] = [
   {
     "id": "SALAT",
     "title": "Salatlar",
-    "backgroundUrl": "/images/salat_kaza_ka.jpg",
+    "backgroundUrl": "/images/salat_mimoza.jpg",
     "items": [
       {
         "name": "Manqal salatı",
@@ -123,7 +123,7 @@ export const menuData: MenuCategory[] = [
   {
     "id": "Təndir Yeməklər",
     "title": "Təndir yeməkləri",
-    "backgroundUrl": "/images/t_ndir_yem_kl_r_quzu_tendirde.jpg",
+    "backgroundUrl": "/images/t_ndir_yem_kl_r__olpa_t_ndir.png",
     "items": [
       {
         "name": "Quzu təndirdə",
@@ -138,7 +138,7 @@ export const menuData: MenuCategory[] = [
   {
     "id": "XƏMİR YEMƏKLƏRİ",
     "title": "Xəmir Yeməkləri",
-    "backgroundUrl": "/images/x_m_r_yem_kl_r__g_rc__xengeli.jpg",
+    "backgroundUrl": "/images/x_m_r_yem_kl_r__yarpaq_xengeli.png",
     "items": [
       {
         "name": "Gürcü xəngəli",
@@ -189,7 +189,7 @@ export const menuData: MenuCategory[] = [
       },
       {
         "name": "1 Nəfərlik Set",
-        "price": ""
+        "price": "6 AZN"
       },
       {
         "name": "Səhər Yeməyi",
@@ -200,11 +200,11 @@ export const menuData: MenuCategory[] = [
   {
     "id": "Soyuq Qəlyanaltılar",
     "title": "Soyuq Qəlyanaltılar",
-    "backgroundUrl": "/images/soyuq_qelyanaltilar.png",
+    "backgroundUrl": "/images/soyuq_q_lyanalt_lar_gemini_generated_image_azfcryazfcryazfc.png",
     "items": [
       {
         "name": "Acika",
-        "price": ""
+        "price": "1 AZN"
       },
       {
         "name": "Süzmə",
@@ -255,7 +255,7 @@ export const menuData: MenuCategory[] = [
   {
     "id": "Tava Yemək",
     "title": "Tava Yeməkləri",
-    "backgroundUrl": "/images/tava_yem_k_tava_yemek_3.jpg",
+    "backgroundUrl": "/images/tava_yem_k_tava_yemek1.jpg",
     "items": [
       {
         "name": "Tabaka",
@@ -379,7 +379,7 @@ export const menuData: MenuCategory[] = [
   {
     "id": "Qazan Yeməklər",
     "title": "Qazan Yeməkləri",
-    "backgroundUrl": "/images/qazan_yem_kl_r_bozlamac.jpg",
+    "backgroundUrl": "/images/qazan-yemeyi.webp",
     "items": [
       {
         "name": "Çölmə",
@@ -473,7 +473,7 @@ export const menuData: MenuCategory[] = [
   {
     "id": "Soyuq İçkilər",
     "title": "Soyuq İçkilər",
-    "backgroundUrl": "/images/soyuq___kil_r_kolaylikla-hazirlayabileceginiz-soguk-ic-4d37.png",
+    "backgroundUrl": "/images/soyuq___kil_r_vecteezy_mountain-dew-sangrita_30625115.jpg",
     "items": [
       {
         "name": "Qızılquyu düşes",
@@ -516,7 +516,7 @@ export const menuData: MenuCategory[] = [
   {
     "id": "İsti İcecek",
     "title": "İsti İçkilər",
-    "backgroundUrl": "/images/_sti__cecek_isti_icecek.jpeg",
+    "backgroundUrl": "/images/_sti__cecek__pngtree_traditional_russian_tea_15892326.jpg",
     "items": [
       {
         "name": "Çay sadə",
@@ -543,7 +543,7 @@ export const menuData: MenuCategory[] = [
   {
     "id": "şorbalar",
     "title": "Şorbalar",
-    "backgroundUrl": "/images/_orbalar_merci_sorba.jpg",
+    "backgroundUrl": "/images/_orbalar__orba.jpg",
     "items": [
       {
         "name": "Mərci",
@@ -571,7 +571,7 @@ export const menuData: MenuCategory[] = [
       },
       {
         "name": "Sulu Xəngəl",
-        "price": ""
+        "price": "3 AZN"
       }
     ]
   }

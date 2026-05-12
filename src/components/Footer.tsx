@@ -65,7 +65,7 @@ export const Footer: React.FC = () => {
             <p>Sifariş və suallarınız üçün bizimlə əlaqə saxlayın.</p>
             
             <div className={styles.socialLinks}>
-              <a href="https://wa.me/994104672788" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/994505508282" target="_blank" rel="noopener noreferrer">
                 <MessageCircle size={24} />
                 WhatsApp
               </a>

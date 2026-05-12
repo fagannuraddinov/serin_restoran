@@ -25,7 +25,7 @@ for (const dir of dirs) {
   const files = fs.readdirSync(dirPath);
 
   const txtFile = files.find(f => f.endsWith('.txt'));
-  const imageFiles = files.filter(f => f.endsWith('.jpg') || f.endsWith('.jpeg') || f.endsWith('.png'));
+  const imageFiles = files.filter(f => f.endsWith('.jpg') || f.endsWith('.jpeg') || f.endsWith('.png') || f.endsWith('.webp'));
 
   let backgroundUrl = '';
   if (imageFiles.length > 0) {
