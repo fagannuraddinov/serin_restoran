@@ -7,16 +7,7 @@ import { SearchProvider } from './context/SearchContext';
 
 function App() {
   useEffect(() => {
-    const handleMouseDown = (e: MouseEvent) => {
-      const target = e.target as HTMLElement;
-      // Don't prevent default on inputs or if we need focus
-      if ((target.closest('button') || target.closest('a')) && !target.closest('input')) {
-        // e.preventDefault();
-      }
-    };
-    
-    // window.addEventListener('mousedown', handleMouseDown);
-    // return () => window.removeEventListener('mousedown', handleMouseDown);
+    // Global event handlers can be added here if needed
   }, []);
 
   return (
