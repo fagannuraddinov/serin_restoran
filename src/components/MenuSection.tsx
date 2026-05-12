@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, X, ChevronRight } from 'lucide-react';
+import { Search, X, ChevronRight, Instagram, Music, MessageCircle } from 'lucide-react';
 import { useSearch } from '../context/SearchContext';
 import { menuData } from '../data/menuData';
 import type { MenuCategory } from '../data/menuData';
@@ -84,6 +84,29 @@ export const MenuSection: React.FC = () => {
           const trimmed = line.trim();
           if (!trimmed) return null;
           
+          // Special handling for social media links
+          if (trimmed === 'TikTok') {
+            return (
+              <a key={i} href="https://www.tiktok.com/@quba_serin_restoran" target="_blank" rel="noopener noreferrer" className={styles.banquetSocialLink}>
+                <Music size={18} /> TikTok
+              </a>
+            );
+          }
+          if (trimmed === 'Instagram') {
+            return (
+              <a key={i} href="https://www.instagram.com/serinrestoran.quba/" target="_blank" rel="noopener noreferrer" className={styles.banquetSocialLink}>
+                <Instagram size={18} /> Instagram
+              </a>
+            );
+          }
+          if (trimmed === 'WhatsApp') {
+            return (
+              <a key={i} href="https://wa.me/994505508282" target="_blank" rel="noopener noreferrer" className={styles.banquetSocialLink}>
+                <MessageCircle size={18} /> WhatsApp
+              </a>
+            );
+          }
+
           // Header detection (all caps and no small letters)
           const isHeader = trimmed === trimmed.toUpperCase() && trimmed.length > 5 && !trimmed.includes(':');
           

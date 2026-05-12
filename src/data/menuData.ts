@@ -17,7 +17,7 @@ export const menuData: MenuCategory[] = [
     "backgroundUrl": "/images/30_manat_menu_30_manatliq_menu.jpeg",
     "items": [
       {
-        "name": "SƏRİN AİLƏVİ RESTORAN\nToy, Nişan, Ad günləri və Bayram şənlikləri üçün\nMENYU 30 Azn\nSOYUQ QƏLYANALTILAR\nMeyvə (mövsümü)\nPomidor - xiyar\nPendir (mal-saçaq)\nSüzmə\nAjika\nZeytun - limon\nLəbləbi\nBlinçik (mal əti və ciyər)\nRulet (Lavaşda)\nManqal salatı\nGavalı salatı\nPaytaxt salatı\nMimoza\nKazaçki\nÇörək (xərək)\nKABABLAR\nLülə\nTikə\nAntrikod - Yablocka\nBasdırma\nToyuq\nKartof\nTərəvəz (istəyə görə)\nİSTİ YEMƏKLƏR\nÇolpa Tabaka və ya (soyutma)\nBuğlama (quzu ve ya mal)\nPilov (şüüt və ya turşu qovurma)\nSƏRİN İÇKİLƏR\nQazlı su\nQazsız su\nDüşes\nTarxun\nKampot\nÇay\nƏLAVƏ XƏRCLƏR (30₼)\nSpirtli içki\nMusiqi\nKamera - foto\nDekor\nŞou proqram\nƏlaqə və Sosial Media:\nTikTok: serin.restoran.quba\nInstagram: serinrestoran_quba\nRestoran əlaqə tel: 050 550 82 82",
+        "name": "SƏRİN AİLƏVİ RESTORAN\nToy, Nişan, Ad günləri və Bayram şənlikləri üçün\nMENYU 30 Azn\nSOYUQ QƏLYANALTILAR\nMeyvə (mövsümü)\nPomidor - xiyar\nPendir (mal-saçaq)\nSüzmə\nAjika\nZeytun - limon\nLəbləbi\nBlinçik (mal əti və ciyər)\nRulet (Lavaşda)\nManqal salatı\nGavalı salatı\nPaytaxt salatı\nMimoza\nKazaçki\nÇörək (xərək)\nKABABLAR\nLülə\nTikə\nAntrikod - Yablocka\nBasdırma\nToyuq\nKartof\nTərəvəz (istəyə görə)\nİSTİ YEMƏKLƏR\nÇolpa Tabaka və ya (soyutma)\nBuğlama (quzu ve ya mal)\nPilov (şüüt və ya turşu qovurma)\nSƏRİN İÇKİLƏR\nQazlı su\nQazsız su\nDüşes\nTarxun\nKampot\nÇay\nƏLAVƏ XƏRCLƏR\nSpirtli içki\nMusiqi\nKamera - foto\nDekor\nŞou proqram\nSOSİAL MEDİA VƏ ƏLAQƏ\nTikTok\nInstagram\nWhatsApp",
         "price": "30 AZN"
       }
     ]
