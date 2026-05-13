@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, X, ChevronRight, Instagram, Music, MessageCircle } from 'lucide-react';
+import { Search, X, ChevronRight, Instagram, Music, MessageCircle, Phone } from 'lucide-react';
 import { useSearch } from '../context/SearchContext';
 import { menuData } from '../data/menuData';
 import type { MenuCategory } from '../data/menuData';
@@ -106,6 +106,13 @@ export const MenuSection: React.FC = () => {
               </a>
             );
           }
+          if (trimmed === 'Zəng') {
+            return (
+              <a key={i} href="tel:+994505508282" className={styles.banquetSocialLink}>
+                <Phone size={18} /> +994 50 550 82 82
+              </a>
+            );
+          }
 
           // Header detection (all caps and no small letters)
           const isHeader = trimmed === trimmed.toUpperCase() && trimmed.length > 5 && !trimmed.includes(':');
@@ -144,7 +151,7 @@ export const MenuSection: React.FC = () => {
   const showSearchResults = isFocused && searchQuery.trim().length > 0;
 
   return (
-    <div className={styles.menuContainer}>
+    <div id="menu-section" className={styles.menuContainer}>
       
       {/* Search Bar */}
       <div className={styles.searchContainer}>

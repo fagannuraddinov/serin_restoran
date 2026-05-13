@@ -133,6 +133,9 @@ export const Header: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 10 }}
                   >
+                    <a href="tel:+994505508282">
+                      <Phone size={18} /> +994 50 550 82 82
+                    </a>
                     <a href="https://wa.me/994505508282" target="_blank" rel="noopener noreferrer">
                       <MessageCircle size={18} /> WhatsApp
                     </a>

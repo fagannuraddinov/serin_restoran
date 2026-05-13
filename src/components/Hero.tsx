@@ -26,7 +26,7 @@ export const Hero: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
-          onClick={() => document.getElementById('banquet-menu')?.scrollIntoView({ behavior: 'smooth' })}
+          onClick={() => document.getElementById('menu-section')?.scrollIntoView({ behavior: 'smooth' })}
         >
           Menyunu Kəşf Et
         </motion.button>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MapPin, MessageCircle, Instagram, Music, X } from 'lucide-react';
+import { MapPin, MessageCircle, Instagram, Music, X, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './Footer.module.css';
 
@@ -65,6 +65,10 @@ export const Footer: React.FC = () => {
             <p>Sifariş və suallarınız üçün bizimlə əlaqə saxlayın.</p>
             
             <div className={styles.socialLinks}>
+              <a href="tel:+994505508282">
+                <Phone size={24} />
+                +994 50 550 82 82
+              </a>
               <a href="https://wa.me/994505508282" target="_blank" rel="noopener noreferrer">
                 <MessageCircle size={24} />
                 WhatsApp
